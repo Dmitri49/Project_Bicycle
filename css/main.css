@@ -1,0 +1,811 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(247, 247, 247);
+}
+
+.main-image {
+  position: relative;
+  overflow: hidden;
+}
+.main-image img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.menu {
+  position: absolute;
+  top: 55px;
+  left: calc(50% - 303px);
+  width: 618px;
+}
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu ul :nth-child(2) {
+  margin-right: 90px;
+}
+.menu ul li a {
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+  color: #4D4959;
+}
+
+.main-logo {
+  position: absolute;
+  top: -38px;
+  left: calc(50% - 47px);
+}
+
+.main-description {
+  padding: 100px;
+}
+
+.secondary-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.secondary-picture img {
+  margin-bottom: 30px;
+}
+
+.main-title {
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #353738;
+}
+
+.title {
+  margin-bottom: 35px;
+}
+
+.description-text {
+  max-width: 1079px;
+  margin: 0 auto;
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+  color: #848789;
+}
+
+.main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.top-image-1 {
+  position: relative;
+}
+.top-image-1 img {
+  max-width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.top-image-1::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background-image: url(/pictures/logo-1.png);
+  width: 113px;
+  height: 118px;
+  top: calc(50% - 57px);
+  left: calc(50% - 59px);
+}
+
+.info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 20px;
+}
+
+.info::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: calc(50% - 12px);
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: rotate(44deg);
+          transform: rotate(44deg);
+  background-color: rgb(247, 247, 247);
+}
+
+.info-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.info-picture img {
+  margin-bottom: 30px;
+}
+
+.info-title {
+  margin-bottom: 25px;
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #353738;
+}
+
+.info-text {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: justify;
+  color: #848789;
+}
+
+.top-image-2 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.middle-image-1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.middle-image-2 img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.bottom-image-1 img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.bottom-image-2 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.bottom-image-3 img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.reviews-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+  padding: 50px;
+}
+
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.review {
+  display: none;
+}
+
+.review.review-active {
+  display: block;
+}
+
+.review > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.review > div img {
+  margin-bottom: 30px;
+}
+
+.review-title {
+  margin-bottom: 27px;
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #353738;
+}
+.review-title span {
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #CBCCCD;
+}
+
+.review-text {
+  max-width: 1079px;
+  margin: 0 auto;
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+  color: #848789;
+}
+
+.tab-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 150px;
+  height: 20px;
+}
+
+.tab {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid #CBCCCD;
+  background-color: rgb(247, 247, 247);
+}
+
+.tab:hover {
+  cursor: pointer;
+}
+
+.tab.tab-active {
+  background-color: rgb(100, 194, 158);
+}
+
+.images-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 534px;
+  overflow: hidden;
+}
+
+.image-block-1 {
+  max-width: 33, 33%;
+}
+.image-block-1 img {
+  max-width: 100%;
+  height: 267px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.image-block-1__1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 267px;
+}
+.image-block-1__1 img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.image-block-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 33, 33%;
+  height: 534px;
+}
+.image-block-2 img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.image-block-3 {
+  max-width: 33, 33%;
+}
+.image-block-3 img {
+  position: relative;
+  max-width: 100%;
+  height: 267px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.image-3__1 {
+  position: relative;
+}
+
+.image-3__1::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(100, 194, 158, 0.8);
+}
+
+.image-block-3__2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 267px;
+}
+.image-block-3__2 img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.discover-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  background-color: rgb(40, 47, 53);
+}
+
+.button-shop {
+  width: 300px;
+  height: 54px;
+  border: 1px solid RGBA(255, 255, 255, 0.5);
+  background-color: rgb(40, 47, 53);
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.button-shop:hover {
+  background-color: rgba(100, 194, 158, 0.8);
+}
+
+.begin-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+}
+
+.begin-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+.begin-info img {
+  width: 94px;
+  height: 85px;
+  margin-bottom: 39px;
+}
+
+.begin-slogan {
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #848789;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 540px;
+  height: 65px;
+}
+
+.field-search {
+  width: 400px;
+  height: 65px;
+  padding-left: 20px;
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.field-search::-webkit-input-placeholder {
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.5;
+}
+
+.field-search::-moz-placeholder {
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.5;
+}
+
+.field-search:-ms-input-placeholder {
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.5;
+}
+
+.field-search::-ms-input-placeholder {
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.5;
+}
+
+.field-search::placeholder {
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #929292;
+  opacity: 0.5;
+}
+
+.button-search {
+  width: 130px;
+  height: 65px;
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: rgb(100, 194, 158);
+}
+
+.button-search:hover {
+  background-color: rgb(74, 165, 130);
+}
+
+.footer-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: rgb(240, 239, 239);
+}
+
+.shop-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.shop-contact_address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+}
+.shop-contact_address span {
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  color: #848789;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+}
+
+.twitter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 38px;
+  height: 37px;
+}
+
+.twitter:hover img {
+  width: 38px;
+  height: 37px;
+}
+
+.facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 38px;
+  height: 37px;
+  margin-left: 10px;
+}
+
+.facebook:hover img {
+  width: 38px;
+  height: 37px;
+}
+
+.pinterest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 38px;
+  height: 37px;
+  margin-left: 10px;
+}
+
+.pinterest:hover img {
+  width: 38px;
+  height: 37px;
+}
+
+.yebo-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+}
+.yebo-info span {
+  margin-right: 8px;
+  font-family: "Wix Madefor Display", "Arial", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
+}
